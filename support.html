@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ColdPass — Support</title>
+  <meta name="description" content="Help and frequently asked questions for ColdPass, the self-custodial password vault." />
+  <link rel="icon" href="icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="icon.png" alt="ColdPass" />ColdPass</a>
+      <nav class="nav">
+        <a href="index.html#features">Features</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap doc">
+    <a class="back" href="index.html">← Back to ColdPass</a>
+    <h1>Support</h1>
+    <p class="updated">We're happy to help.</p>
+
+    <p class="callout">Need a hand or found a bug? Email <a href="mailto:bernardomarques97@protonmail.com">bernardomarques97@protonmail.com</a> and we'll get back to you.</p>
+
+    <h2>Getting started</h2>
+    <ul>
+      <li>On first launch, ColdPass creates your vault: generate a recovery phrase, confirm it, and set a biometric unlock. There is no account to create.</li>
+      <li>Tap <strong>Add service</strong> to add a login. ColdPass derives a strong, unique password for it on your device.</li>
+      <li>Tap an entry to reveal or copy its password — protected by Face ID / Touch ID.</li>
+    </ul>
+
+    <h2>Turning on AutoFill (iOS)</h2>
+    <ul>
+      <li>Open the iOS <strong>Settings</strong> app → <strong>General</strong> → <strong>AutoFill &amp; Passwords</strong>.</li>
+      <li>Enable <strong>ColdPass</strong> as an AutoFill provider.</li>
+      <li>On any login screen, tap the password field and choose ColdPass from the keyboard bar. Fills are gated by Face ID / Touch ID.</li>
+    </ul>
+
+    <h2>Frequently asked questions</h2>
+
+    <h2 style="font-size:17px">Where are my passwords stored?</h2>
+    <p>They aren't. ColdPass derives each password on demand from inputs you control and never saves the result. There is no server and no cloud copy.</p>
+
+    <h2 style="font-size:17px">What happens if I lose my phone?</h2>
+    <p>Install ColdPass on a new device and restore from your recovery phrase. Everything is regenerated. This is why keeping your recovery phrase safe is essential.</p>
+
+    <h2 style="font-size:17px">I lost my recovery phrase. Can you recover my vault?</h2>
+    <p>No. ColdPass is self-custodial — there is no password reset and no way for anyone, including us, to recover your vault without the recovery phrase. This is the trade-off for having no company hold your data.</p>
+
+    <h2 style="font-size:17px">Does ColdPass send my data anywhere?</h2>
+    <p>No. The app makes no network requests to operate your vault, and it contains no analytics or tracking. See our <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2 style="font-size:17px">Can I use ColdPass for two-factor (2FA) codes?</h2>
+    <p>Yes. You can store TOTP secrets alongside your logins and ColdPass generates the codes on-device, fully offline.</p>
+
+    <h2 style="font-size:17px">What is the duress vault?</h2>
+    <p>An optional second PIN opens a separate decoy vault. Under pressure you can reveal the duress PIN while your real vault stays hidden. Optional panic-wipe and canary tripwires add further tamper protection.</p>
+
+    <h2>Contact</h2>
+    <p>Email <a href="mailto:bernardomarques97@protonmail.com">bernardomarques97@protonmail.com</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Agenius — ColdPass</span>
+      <span><a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="support.html">Support</a></span>
+    </div>
+  </footer>
+</body>
+</html>

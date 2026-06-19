@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ColdPass — Self-custodial password vault</title>
+  <meta name="description" content="ColdPass is a password manager with no cloud and no account. Passwords are derived on your device, never stored. Your seed, your keys, your control." />
+  <link rel="icon" href="icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:title" content="ColdPass — Self-custodial password vault" />
+  <meta property="og:description" content="No cloud. No account. Passwords derived on your device, never stored." />
+  <meta property="og:image" content="icon.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="icon.png" alt="ColdPass" />ColdPass</a>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="border-top:none">
+      <div class="wrap">
+        <img class="mark" src="icon.png" alt="ColdPass icon" />
+        <h1>Passwords you never store.</h1>
+        <p class="tagline">ColdPass is a self-custodial password vault built on the security model of a crypto hardware wallet. No cloud, no account, no server to breach — your passwords are derived on your device, on demand.</p>
+        <a class="cta" href="support.html">Get started</a>
+        <span class="cta-note">Currently in TestFlight beta for iOS.</span>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <h2>Why ColdPass is different</h2>
+        <p class="lead">Most password managers encrypt your vault and upload it to their servers. ColdPass doesn't store passwords at all.</p>
+        <div class="grid">
+          <div class="card"><div class="ico">🚫☁️</div><h3>No servers, no cloud</h3><p>There's no backend and no account. Nothing to breach, subpoena, or leak.</p></div>
+          <div class="card"><div class="ico">🧮</div><h3>Derived, not stored</h3><p>Each password is recomputed on demand from inputs only you control — never written down.</p></div>
+          <div class="card"><div class="ico">🔑</div><h3>You hold the keys</h3><p>A single recovery phrase regenerates everything on a new device. Self-custody, like a hardware wallet.</p></div>
+          <div class="card"><div class="ico">⚡️</div><h3>AutoFill + Face ID</h3><p>Fill logins in Safari, browsers, and apps — gated by Face ID or Touch ID every time.</p></div>
+          <div class="card"><div class="ico">🔐</div><h3>Built-in 2FA</h3><p>Keep your TOTP codes next to your logins. One app instead of two.</p></div>
+          <div class="card"><div class="ico">🧪</div><h3>You choose the crypto</h3><p>Pick the key-derivation function, hash, length, and character set per entry. No hidden defaults.</p></div>
+          <div class="card"><div class="ico">🕶️</div><h3>Duress &amp; tripwires</h3><p>A second PIN opens a convincing decoy vault. Panic wipe and canary tripwires for tamper detection.</p></div>
+          <div class="card"><div class="ico">🛰️</div><h3>Quantum-ready</h3><p>Optional hybrid post-quantum protection for your most long-lived secrets and sharing.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <p class="lead">No sign-up. You're in control from the first launch.</p>
+        <div class="steps">
+          <div class="step"><h3>Create your vault</h3><p>Generate a recovery phrase on your device and set a biometric unlock. No email, no account.</p></div>
+          <div class="step"><h3>Add your logins</h3><p>For each service, ColdPass derives a strong, unique password on demand — it's never stored.</p></div>
+          <div class="step"><h3>Fill anywhere</h3><p>Use AutoFill across apps and the web, unlocked by Face ID. Your data never leaves the device.</p></div>
+        </div>
+        <p style="margin-top:28px">
+          <span class="callout"><strong>Self-custodial means no recovery.</strong> Your recovery phrase is the only way to restore your vault — there is no password reset and no support team that can recover it. Back up your phrase safely.</span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Agenius — ColdPass</span>
+      <span>
+        <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+        <a href="support.html">Support</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
