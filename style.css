@@ -42,7 +42,12 @@ a:hover { text-decoration: underline; }
 .nav a:hover { color: var(--text); text-decoration: none; }
 
 /* hero */
-.hero { text-align: center; padding: 96px 0 72px; }
+.hero { text-align: center; padding: 96px 0 72px; position: relative; }
+.hero::before {
+  content: ""; position: absolute; left: 0; right: 0; top: -64px; height: 520px;
+  background: radial-gradient(58% 60% at 50% 0%, rgba(79, 140, 255, 0.16), transparent 72%);
+  pointer-events: none; z-index: -1;
+}
 .hero img.mark { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 0 60px rgba(79, 140, 255, 0.25); }
 .hero h1 { font-size: 44px; line-height: 1.1; margin: 28px 0 12px; letter-spacing: -0.02em; }
 .hero p.tagline { font-size: 20px; color: var(--muted); max-width: 620px; margin: 0 auto 32px; }
@@ -57,10 +62,16 @@ section .lead { color: var(--muted); margin: 0 0 36px; max-width: 640px; }
 
 /* feature grid */
 .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
-.card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+.card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; transition: border-color 0.18s ease, transform 0.18s ease, background 0.18s ease; }
+.card:hover { border-color: #3a3a48; transform: translateY(-2px); background: var(--panel-2); }
 .card h3 { margin: 0 0 8px; font-size: 18px; }
 .card p { margin: 0; color: var(--muted); font-size: 15px; }
-.card .ico { font-size: 22px; margin-bottom: 10px; }
+.card .ico {
+  width: 44px; height: 44px; border-radius: 12px; margin-bottom: 16px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(124, 196, 255, 0.1); color: var(--ice);
+}
+.card .ico svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 
 /* steps */
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; counter-reset: step; }
